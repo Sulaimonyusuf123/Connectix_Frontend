@@ -67,6 +67,7 @@ const ChangePassword = () => {
             setError("Authentication failed. Please log in again.");
             // Optionally, redirect to login page
             // navigate('/login');
+            
             break;
           case 404:
             setError("User not found. Please log in again.");
