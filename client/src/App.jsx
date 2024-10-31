@@ -24,6 +24,23 @@ import ShowFavorites from './Components/ShowPromoterdetails/ShowEvents/ShowEvent
 import { RegistrationProvider } from './Components/contexts/Formcontext'
 import AccountType from  "./Components/ShowPromoterdetails/AccountType/Accounttype"
 import Landing from './Components/Login_Home/Landing/Landing'
+import PromoterProfile from './Components/ShowpromoterProfile/PromoterProfile/PromoterProfile.jsx';
+import PromoterHelp  from './Components/ShowpromoterProfile/PromoterHelp/PromoterHelp.jsx';
+import  PromoterViewProfile  from './Components/ShowpromoterProfile/PromoterViewProfile/PromoterViewProfile.jsx';
+import  PromoterActivities  from './Components/ShowpromoterProfile/ShowpromoterActivities/PromoterActivities.jsx';
+import  {PromoterLogOut}  from './Components/ShowpromoterProfile/PromoterLogOut/PromoterLogOut.jsx';
+import  PromoChangePass  from './Components/ShowpromoterProfile/PromoterchangePass/PromoChangePass.jsx';
+import PromotePremium  from './Components/ShowpromoterProfile/promoterGetPremium/PromotePremium.jsx';
+import  PromoterSettings  from './Components/ShowpromoterProfile/PromoterSettings/PromoterSettings.jsx';
+import  PromoterCoin  from './Components/ShowpromoterProfile/PromoterBuyCoin/PromoterCoin.jsx';
+import PromoterPayment from './Components/ShowpromoterProfile/PromoterSettings/PromoterPayment.jsx';
+import PromoterAddPayment from './Components/ShowpromoterProfile/PromoterSettings/PromotterAddPayment.jsx';
+import  Showpromoterfacial  from './Components/ShowpromoterProfile/Showpromoterfacial.jsx';
+
+
+
+
+
 
 function App() {
 
@@ -57,9 +74,18 @@ function App() {
           <Route path='/MyProfile' element={<MyProfile/>}></Route>
           <Route path='/ChangePassword' element={<ChangePassword/>}></Route>  
           <Route path='/accounttype' element={<AccountType/>}></Route>          
-        
-
-
+          <Route path='/PromoterProfile' element={<PromoterProfile/>}></Route>          
+          <Route path='/PromoterHelp' element={<PromoterHelp/>}></Route> 
+          <Route path='/PromoterViewProfile' element={<PromoterViewProfile/>}></Route> 
+          <Route path='/PromoterActivities' element={<PromoterActivities/>}></Route>
+          <Route path='/PromoterLogOut' element={<PromoterLogOut/>}></Route>
+          <Route path='/PromoChangePass' element={<PromoChangePass/>}></Route>   
+          <Route path='/PromotePremium' element={<PromotePremium/>}></Route> 
+          <Route path='/PromoterSettings' element={<PromoterSettings/>}></Route>   
+          <Route path='/PromoterCoin' element={<PromoterCoin/>}></Route>   
+          <Route path='/PromoterPayment' element={<PromoterPayment/>}></Route> 
+          <Route path='/PromoterAddPayment' element={<PromoterAddPayment/>}></Route> 
+          <Route path='/Showpromoterfacial' element={<Showpromoterfacial/>}></Route> 
 
         </Routes>
         </UsernameProvider>
